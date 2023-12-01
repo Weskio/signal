@@ -1,0 +1,13 @@
+<p>cookies recipe</p>
+
+<label>
+    #of cookies: 
+    <input type="range" min="10" max="100" step="10" [value]='count()' (input)="update($event)"/>
+    <span>{{count()}}</span>
+</label>
+
+<ul>
+    <li>Butter : {{butter()}} cup(s)</li>
+    <li>Sugar : {{sugar()}} cup(s)</li>
+    <li>Flour : {{flour()}} cup(s)</li>
+</ul>
